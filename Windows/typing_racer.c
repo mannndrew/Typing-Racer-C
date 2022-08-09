@@ -307,3 +307,4 @@ game_info decrement(game_info vars)
 
     return vars;
 }
+
