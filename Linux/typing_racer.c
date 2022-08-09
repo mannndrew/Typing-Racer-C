@@ -20,8 +20,8 @@ typedef struct game_info
     char *str;
     char answer[100];
     char ch;
-	int x;
-	int y;
+    int x;
+    int y;
 } game_info;
 
 clock_t start_game(char *str);
@@ -107,14 +107,14 @@ void end_game(game_info vars)
 {
     printf("\e[1;1H\e[2J");
     printf("All sentences have been completed! Now exiting...\n");
-	sleep(2);
+    sleep(2);
     exit(0);
 }
 
 char letter_input()
 {
-	while(!kbhit());
-	return getchar();
+    while(!kbhit());
+    return getchar();
 }
 
 char *sentence_generator(bool used_sentences[])
@@ -219,14 +219,14 @@ game_info every_second(game_info vars)
     {
         vars.time_buffer = vars.time;
         printf("\nWordsPM: %.0f  ", vars.total_words*(vars.correct_letters/vars.total_letters)*(60/vars.time));
-		printf("\033[%d;%df", vars.y+1, vars.x+1);
+	printf("\033[%d;%df", vars.y+1, vars.x+1);
     }
     return vars;
 }
 
 game_info every_loop(game_info vars)
 {
-	printf("\033[%d;%df", vars.y+1, vars.x+1);
+    printf("\033[%d;%df", vars.y+1, vars.x+1);
     vars = loop_input(vars);
 
     return vars;
@@ -292,7 +292,7 @@ game_info decrement(game_info vars)
         vars.correct_letters--;
 
     vars.answer[vars.letter_counter] = '-';
-	printf("\033[%d;%df", vars.y+1, vars.x+1);
+    printf("\033[%d;%df", vars.y+1, vars.x+1);
     printf("%c", vars.str[vars.letter_counter]);
 
     return vars;
