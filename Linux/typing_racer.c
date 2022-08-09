@@ -132,7 +132,7 @@ char *sentence_generator(bool used_sentences[])
         "I have three things to do today: wash my car, call my mother, and feed my dog.",
         "The Reckson family decided to go to an amusement park on Wednesday."
     };
-
+	
     int random_num = 0;
     int counter = 0;
 
