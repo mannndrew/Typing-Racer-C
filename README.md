@@ -12,4 +12,5 @@ FEATURES:
 - Integrates real time clock to count and display words typed per minute.
 
 APPLICATION PREVIEW:
+
 ![TypeRacer](https://user-images.githubusercontent.com/110883231/210182441-251b4820-2dc4-4f1f-a556-1a61ccd44f27.gif)
