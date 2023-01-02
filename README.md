@@ -8,7 +8,8 @@ FOR LINUX:
 
 FEATURES:
 - Implements fully functioning (colored) graphical user interface to type sentences in the command line. 
-- Uses file inut system to display each sentence for user interaction.
+- Differentiates between incorrerect and correct letters with red spaces and green letters.
+- Uses an array of pointers to display each sentence for user interaction.
 - Integrates real time clock to count and display words typed per minute.
 
 APPLICATION PREVIEW:
